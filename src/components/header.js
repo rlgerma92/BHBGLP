@@ -1,32 +1,58 @@
-import {Link} from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../../static/images/logo.svg"
+import featureImage from "../../static/images/logo.png"
 
-const Header = ({siteTitle}) => (
-    <header>
-        <div className={"container"}>
-            <div className={"top-menu"}>
-                <div className={"logo"}>
-                    <Link to="/" title={"HiStaff"}>
-                        <img alt={"Logo"} src={logo}/>
-                    </Link>
-                </div>
+// const style =
 
-                <div className={"get-started"}>
-                    <a href={"https://app.histaff.io"}>Get Started</a>
-                </div>
-            </div>
+const Header = ({ siteTitle }) => (
+  <header>
+    <div id="main-nav">
+      <div className="wrapper">
+        <div className="logo-wrap">
+          <a href="#" className="logo">
+            <img src={featureImage} />
+          </a>
         </div>
-    </header>
+        <div className="nav-wrap">
+          <ul className="nav-list">
+            <li>
+              <a href="#">Why Hemp?</a>
+            </li>
+            <li>
+              <a href="#">Types of Products</a>
+            </li>
+          </ul>
+        </div>
+        <div className="learn-more">
+          <a href="#" className="button">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+    <div className="hero-wrap">
+      <div className="wrapper">
+        <div className="hero-inner left"></div>
+        <div className="hero-inner right">
+          <h1>Discover Quality Hemp Extract</h1>
+          <p>
+            Chances are you know at least one person claiming to experience
+            significant benefits using hemp based products. If you’ve been
+            trying to learn about what hemp is, how hemp extract products work,
+            and what they could do for you, we are her to help.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
 )
 
 Header.propTypes = {
-    siteTitle: PropTypes.string,
+  siteTitle: PropTypes.string,
 }
 
 Header.defaultProps = {
-    siteTitle: ``,
+  siteTitle: ``,
 }
 
 export default Header

@@ -2,125 +2,102 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import featureImage from "../../static/images/hero.png";
-import thumbnailEvent from "../../static/images/feature-event.png"
-import thumbnailBoard from "../../static/images/feature-board.png"
-import thumbnailNews from "../../static/images/feature-news.png"
-import thumbnailTeams from "../../static/images/feature-team.png"
-import thumbnailStaff from "../../static/images/feature-user.png"
+import thumbnailHead from "../../static/images/head.png"
+import thumbnailHand from "../../static/images/Hand.png"
+import thumbnailFlag from "../../static/images/Flag.png"
+import thumbnailOil from "../../static/images/oil.png"
+import thumbnailTopical from "../../static/images/application.png"
+import thumbnailSoftgel from "../../static/images/softgels.png"
 
 const IndexPage = () => (
-    <Layout>
-        <SEO title="Make your Staff and Workspace Happy"/>
+  <Layout>
+    <SEO title="Discover Quality Hemp Extract" />
 
-        <div className={"page-header home"}>
-            <h1>Make your Staff and Workspace Happy</h1>
-            <p>HiStaff gives your complex the opportunity to increase the percentage of happiness<br/>and enjoyment of your staff and as a result, bring productivity to your workspace.</p>
-            <img alt={"Dashboard"} src={featureImage}/>
-        </div>
-
-        <div className={"container"}>
-            <div className={"features"}>
-                <div className={"feature__item"}>
-                    <div className={"row"}>
-                        <div className={"col-6 first"}>
-                            <div className={"thumbnail"}>
-                                <img alt={"Event"} src={thumbnailEvent}/>
-                            </div>
-                        </div>
-
-                        <div className={"col-6"}>
-                            <div className={"feature__content"}>
-                                <h2>Create and Join Events</h2>
-                                <p>Save your time and energy by letting HiStaff to manage your events (handle the colleague’s birthday, gathering, etc.)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={"feature__item"}>
-                    <div className={"row"}>
-                        <div className={"col-6"}>
-                            <div className={"feature__content"}>
-                                <h2>Public Board</h2>
-                                <p>Let the staff write down on the board freely,<br/>Joking with each other and writing cool content can make the workplace more diverse and attractive for employees. </p>
-                            </div>
-                        </div>
-
-                        <div className={"col-6 first"}>
-                            <div className={"thumbnail"}>
-                                <img alt={"Board"} src={thumbnailBoard}/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={"feature__item"}>
-                    <div className={"row"}>
-                        <div className={"col-6 first"}>
-                            <div className={"thumbnail"}>
-                                <img alt={"News"} src={thumbnailNews}/>
-                            </div>
-                        </div>
-
-                        <div className={"col-6"}>
-                            <div className={"feature__content"}>
-                                <h2>Internal News</h2>
-                                <p>Get rid of sending news by e-mail and its problems; post the news in an internal and attractive format via HiStaff instead.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={"feature__item"}>
-                    <div className={"row"}>
-                        <div className={"col-6"}>
-                            <div className={"feature__content"}>
-                                <h2>Teams</h2>
-                                <p>HiStaff let you add staff in specific teams and manage them easily.</p>
-                            </div>
-                        </div>
-
-                        <div className={"col-6 first"}>
-                            <div className={"thumbnail"}>
-                                <img alt={"Team"} src={thumbnailTeams}/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={"feature__item"}>
-                    <div className={"row"}>
-                        <div className={"col-6 first"}>
-                            <div className={"thumbnail"}>
-                                <img alt={"Users"} src={thumbnailStaff}/>
-                            </div>
-                        </div>
-
-                        <div className={"col-6"}>
-                            <div className={"feature__content"}>
-                                <h2>Staff management</h2>
-                                <p>Discard traditional ways to archive staff documents and information, and try new ways to store and archive them in HiStaff easily.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div className={"container"}>
+      <div className={"features"}>
+        <div className={"feature__item"}>
+          <div className={"row"}>
+            <div className={"col-4"}>
+              <h3>Non-Intoxicating</h3>
+              <img alt={"head"} src={thumbnailHead} />
             </div>
-        </div>
-
-        <div className={"call-to-action"}>
-            <div className={"container"}>
-                <div className={"call-to-action__content"}>
-                    <h2>Sign up for free</h2>
-                    <p>Sign up and start increasing the productivity of your business with HiStaff.</p>
-                </div>
-
-                <div className={"button"}>
-                    <a href="https://app.histaff.io" target={"_blank"}>Get Started</a>
-                </div>
+            <div className={"col-4"}>
+              <h3>Naturally Sourced</h3>
+              <img alt={"head"} src={thumbnailHand} />
             </div>
+            <div className={"col-4"}>
+              <h3>Made In The USA</h3>
+              <img alt={"head"} src={thumbnailFlag} />
+            </div>
+          </div>
         </div>
-    </Layout>
+      </div>
+    </div>
+    <div className={"features"}>
+      <div className={"feature__item"}>
+        <div className={"hero2"}>
+          <div className={"feature__content"}>
+            <h2>Why Hemp?</h2>
+            <p>
+              The Endocannabinoid System (ECS) is a collection of cell receptors
+              and their corresponding molecules (agonists) in the human body
+              responsible for regulating and maintaining many key functions of
+              the human body. Plant cannabinoids, bind with these receptors and
+              send a message to the body to do certain things. Industrial hemp
+              plants contain 113+ naturally occurring, active cannabinoids.
+            </p>
+          </div>
+        </div>
+        <div className={"row"}>
+          <div className={"col-4"}>
+            <div className={"card"}>
+              <div className={"card-image"}>
+                <img alt={"oil"} src={thumbnailOil} />
+              </div>
+              <div className={"card-body"}>
+                <h4>Oil Tinctures</h4>
+                <p>
+                  Oil Tinctures are a popular choice among users because they
+                  are easy to use. For best results, hold a few drops under your
+                  tongue for 10-20 seconds before swallowing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className={"col-4"}>
+            <div className={"card"}>
+              <div className={"card-image"}>
+                <img alt={"topicals"} src={thumbnailTopical} />
+              </div>
+              <div className={"card-body"}>
+                <h4>Topicals</h4>
+                <p>
+                  Bring the benefits straight to your skin with hemp extract
+                  topical products. Topicals are a wonderful addition to any
+                  skincare routine. Apply directly to affected areas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className={"col-4"}>
+            <div className={"card"}>
+              <div className={"card-image"}>
+                <img alt={"softgels"} src={thumbnailSoftgel} />
+              </div>
+              <div className={"card-body"}>
+                <h4>Softgels</h4>
+                <p>
+                  If you value convenience, Softgels may be your best option.
+                  With these products, you never have to worry about measuring
+                  or mixing your preferred dosage.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Layout>
 )
 
 export default IndexPage

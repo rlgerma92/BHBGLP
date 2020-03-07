@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "CBDistillery",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Landing Page",
+  "version": "1.0.0",
+  "author": "Ricky Germaine",
   "dependencies": {
     "gatsby": "^2.7.5",
-    "gatsby-cli": "^2.7.47",
+    "gatsby-cli": "^2.10.2",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.1",
@@ -40,9 +40,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/rlgerma92/bhbglp"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/rlgerma92/bhbglp/issues"
   }
 }

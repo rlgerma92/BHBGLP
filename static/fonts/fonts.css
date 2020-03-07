@@ -1,15 +1,13 @@
 @font-face {
-    font-family: 'Inter';
+    font-family: 'Gilroy-ExtraBold';
+    src: url("gilroy-extrabold-webfont.woff2") format("woff2"), url("gilroy-extrabold-webfont.woff") format("woff");
+    font-weight: normal;
     font-style: normal;
-    font-weight: 700;
-    src: url("Inter-Bold.woff2") format("woff2"),
-    url("Inter-Bold.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'Gilroy-Regular';
+    src: url("gilroy-regular-webfont.woff2") format("woff2"), url("gilroy-regular-webfont.woff") format("woff");
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: url("Inter-Regular.woff2") format("woff2"),
-    url("Inter-Regular.woff") format("woff");
 }
