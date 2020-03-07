@@ -1,6 +1,6 @@
-import PropTypes from "prop-types"
-import React from "react"
-import featureImage from "../../static/images/logo.png"
+import PropTypes from "prop-types";
+import React from "react";
+import featureImage from "../../static/images/logo.png";
 
 // const style =
 
@@ -9,22 +9,22 @@ const Header = ({ siteTitle }) => (
     <div id="main-nav">
       <div className="wrapper">
         <div className="logo-wrap">
-          <a href="#" className="logo">
-            <img src={featureImage} />
+          <a href="/" className="logo">
+            <img src={featureImage} alt={"cbdistillery"} />
           </a>
         </div>
         <div className="nav-wrap">
           <ul className="nav-list">
             <li>
-              <a href="#">Why Hemp?</a>
+              <a href="/">Why Hemp?</a>
             </li>
             <li>
-              <a href="#">Types of Products</a>
+              <a href="/">Types of Products</a>
             </li>
           </ul>
         </div>
         <div className="learn-more">
-          <a href="#" className="button">
+          <a href="/" className="button">
             Learn More
           </a>
         </div>
@@ -45,14 +45,14 @@ const Header = ({ siteTitle }) => (
       </div>
     </div>
   </header>
-)
+);
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  siteTitle: PropTypes.string
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+  siteTitle: ``
+};
 
-export default Header
+export default Header;

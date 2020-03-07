@@ -1,13 +1,13 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import thumbnailHead from "../../static/images/head.png"
-import thumbnailHand from "../../static/images/Hand.png"
-import thumbnailFlag from "../../static/images/Flag.png"
-import thumbnailOil from "../../static/images/oil.png"
-import thumbnailTopical from "../../static/images/application.png"
-import thumbnailSoftgel from "../../static/images/softgels.png"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import thumbnailHead from "../../static/images/head.png";
+import thumbnailHand from "../../static/images/Hand.png";
+import thumbnailFlag from "../../static/images/Flag.png";
+import thumbnailOil from "../../static/images/oil.png";
+import thumbnailTopical from "../../static/images/application.png";
+import thumbnailSoftgel from "../../static/images/softgels.png";
 
 const IndexPage = () => (
   <Layout>
@@ -23,11 +23,11 @@ const IndexPage = () => (
             </div>
             <div className={"col-4"}>
               <h3>Naturally Sourced</h3>
-              <img alt={"head"} src={thumbnailHand} />
+              <img alt={"hand"} src={thumbnailHand} />
             </div>
             <div className={"col-4"}>
               <h3>Made In The USA</h3>
-              <img alt={"head"} src={thumbnailFlag} />
+              <img alt={"flag"} src={thumbnailFlag} />
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ const IndexPage = () => (
     </div>
     <div className={"features"}>
       <div className={"feature__item"}>
-        <div className={"hero2"}>
+        <div className={"hero2"} alt={"Hemp"}>
           <div className={"feature__content"}>
             <h2>Why Hemp?</h2>
             <p>
@@ -98,6 +98,6 @@ const IndexPage = () => (
       </div>
     </div>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

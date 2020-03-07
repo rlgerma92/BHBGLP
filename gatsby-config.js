@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Discover Quality Hemp Extract`,
     description: `Chances are you know at least one person claiming to experience significant benefits using hemp based products. If you’ve been trying to learn about what hemp is, how hemp extract products work, and what they could do for you, we are her to help. `,
-    author: `CBDistillery`,
+    author: `CBDistillery`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,8 +10,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/static/images`,
-      },
+        path: `${__dirname}/static/images`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -24,24 +24,21 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#308946`,
         display: `minimal-ui`,
-        icon: `${__dirname}/static/images/favicon.png`, // This path is relative to the root of the site.
-      },
+        icon: `${__dirname}/static/images/favicon.png` // This path is relative to the root of the site.
+      }
     },
     `gatsby-plugin-sass`,
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
-        google: {
-          families: ["Monospace"],
-        },
         custom: {
           families: ["gilroy"],
-          urls: ["/fonts/fonts.css"],
-        },
-      },
-    },
+          urls: ["/fonts/fonts.css"]
+        }
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
-}
+  ]
+};
