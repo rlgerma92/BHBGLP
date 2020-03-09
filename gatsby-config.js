@@ -33,7 +33,7 @@ module.exports = {
       options: {
         custom: {
           families: ["gilroy"],
-          urls: ["/fonts/fonts.css"]
+          urls: ["./static/fonts/fonts.css"]
         }
       }
     }

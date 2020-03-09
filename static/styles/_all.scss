@@ -1,5 +1,3 @@
-$break-small: 719px;
-
 @font-face {
   font-family: "Gilroy-ExtraBold";
   src: url("../fonts/gilroy-extrabold-webfont.woff2") format("woff2"),
@@ -18,8 +16,8 @@ $break-small: 719px;
 
 body {
   font-family: "Gilroy-Regular", sans-serif;
-  margin: 0;
   color: #ffffff;
+  justify-content: center;
 
   p {
     font-family: gilroy;
@@ -47,8 +45,8 @@ body {
   }
 
   header {
-    background: url("../images/header.png") center left no-repeat;
-    background-size: cover;
+    background: url("../images/hero.jpg") center left no-repeat;
+    background-size: flex;
     min-height: 650px;
   }
 
@@ -91,6 +89,9 @@ body {
     display: block;
     padding: 0;
     margin: 0 auto;
+    background-color: #fff;
+    opacity: 0.9;
+    border-radius: 2px;
   }
 
   header #main-nav .nav-wrap .nav-list li {
@@ -141,7 +142,7 @@ body {
   }
 
   header .hero-wrap {
-    padding: 2em 0;
+    // padding: 2em 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -162,433 +163,293 @@ body {
     font-size: 1.1em;
     line-height: 2;
     color: #000000;
+    font-family: "Gilroy-Regular", sans-serif;
+    background-color: #fff;
+    opacity: 0.75;
+    padding: 1em;
+    border-radius: 1em;
   }
 
-  .page-header {
-    text-align: center;
-    padding: 100px 0 100px 0;
-    background-color: #ffffff;
-    border-radius: 0px 0px 40px 40px;
+  .container {
+    box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.267);
+    margin-bottom: -5%;
 
-    h1 {
-      font-style: normal;
-      font-weight: bold;
-      font-size: 48px;
-      color: #1e1c21;
-      padding: 0 0 15px 0;
-      line-height: 54px;
-    }
+    .row {
+      display: flex;
+      padding: 2em;
 
-    h2 {
-      font-size: 36px;
-      font-style: normal;
-      font-weight: bold;
-      color: #1e1c21;
-      line-height: 54px;
-    }
+      .col-4 {
+        margin: 0 auto;
 
-    p {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 34px;
-    }
+        h3 {
+          font-size: 2em;
+        }
 
-    img {
-      margin-top: 61px;
-      max-width: 65%;
-    }
-
-    &.home {
-      padding-bottom: 10px;
-    }
-
-    @media screen and (max-width: $break-small) {
-      padding-top: 1px;
-      padding-bottom: 50px;
-
-      h1,
-      h2 {
-        padding-top: 0;
-      }
-
-      img {
-        max-width: 80%;
+        img {
+          width: 8em;
+          padding: em;
+        }
       }
     }
   }
 
-  .features {
-    .feature__item {
+  .whyHemp {
+    padding: none;
+
+    .hero2 {
+      background: url("../images/PlantHero2.png") center no-repeat;
+      display: inline-flex;
+      height: 800px;
+
       .row {
-        flex-wrap: wrap;
-        align-content: center;
-
         .col-4 {
-          margin: 0 auto;
-          padding: 2em;
-
-          .card {
-            padding: 5em;
-
-            .card-image {
-              img {
-                max-width: 15em;
-                height: 15em;
-                border-width: 6px;
-                border-radius: 200px;
-                background: #fff;
-                box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
-              }
-            }
-
-            .card-body {
-              // padding: 4em;
-
-              h4 {
-                text-align: center;
-                font-family: "Gilroy-Regular";
-                font-size: 2.5em;
-                color: #000;
-                font-weight: 700;
-                margin-bottom: 5%;
-              }
-
-              p {
-                font-size: 1.5em;
-                text-align: center;
-                color: rgba(0, 0, 0, 0.836);
-                font-weight: 200;
-                font-family: "Gilroy-Regular";
-              }
-            }
+          h2 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-top: 10%;
+            margin-left: 10%;
+            color: #fff;
           }
 
-          img {
-            float: right;
-            margin-right: 15%;
-          }
-
-          h3 {
-            float: right;
-            text-align: right;
-            padding: 2em;
-            margin-top: -5%;
-
-            // max-width: min-content;
+          p {
+            font-size: 1.2em;
+            line-height: 26px;
+            margin-left: 10%;
+            max-width: 30%;
+            font-family: "Gilroy-Regular", sans-serif;
           }
         }
       }
+    }
+  }
 
-      .hero2 {
-        background-image: url("../../static/images/PlantHero2.png");
-        height: 600px;
-        background-size: cover;
-        margin-bottom: -15%;
-      }
+  .info {
+    margin-top: -15%;
 
-      .feature__content {
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
+    .row {
+      display: flex;
+      text-align: center;
 
-        h2 {
-          font-size: 3em;
-          font-weight: bold;
-          margin-top: 10%;
-          margin-bottom: 1em;
-          margin-left: 10%;
-          color: #fff;
+      .col-4 {
+        padding: 5em;
+        display: block;
+        margin: 0 auto;
+
+        img {
+          width: 15em;
+          height: 15em;
+          border-width: 1em;
+          border-radius: 8em;
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        h4 {
+          font-family: "Gilroy-Regular";
+          font-size: 2.5em;
+          color: #000;
+          font-weight: 700;
+          margin-bottom: 5%;
         }
 
         p {
-          font-size: 18px;
-          line-height: 26px;
-          margin-left: 10%;
-          max-width: 30%;
+          font-size: 1.5em;
+          color: rgba(0, 0, 0, 0.836);
+          font-weight: 200;
+          font-family: "Gilroy-Regular";
         }
-      }
-
-      .thumbnail {
-        img {
-          max-width: 100%;
-        }
-      }
-    }
-
-    @media screen and (max-width: $break-small) {
-      .col-6.first {
-        order: 1;
-      }
-
-      .col-6 {
-        order: 2;
-      }
-
-      .content {
-        text-align: center;
-        display: block !important;
-        margin: 0;
-      }
-
-      h2 {
-        margin-top: 10px;
-      }
-    }
-  }
-
-  .call-to-action {
-    background-color: #098a34;
-    color: #ffffffe9;
-    padding: 65px 0;
-    border-radius: 40px 40px 0px 0px;
-
-    .container {
-      display: flex;
-
-      @media screen and (max-width: $break-small) {
-        display: block;
-
-        .call-to-action__content {
-          text-align: center;
-        }
-      }
-    }
-
-    .button {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      @media screen and (max-width: $break-small) {
-        display: block;
-        width: 100%;
-        margin-top: 30px;
-      }
-
-      a {
-        font-size: 18px;
-        background-color: #ffffffd6;
-        width: 184px;
-        margin-left: auto;
-        border-radius: 4px;
-        height: 54px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        font-weight: bold;
-        flex-direction: column;
-        color: #1f1f1f;
-
-        @media screen and (max-width: $break-small) {
-          margin: 0 auto;
-        }
-
-        &:active {
-        }
-      }
-    }
-
-    .call-to-action__content {
-      h2 {
-        font-size: 36px;
-        font-family: Inter;
-        font-weight: 600;
-        margin: 0 0 32px;
-        color: #ffffffec;
-      }
-
-      p {
-        font-size: 18px;
-        line-height: 32px;
-      }
-    }
-  }
-
-  .content {
-    line-height: 26px;
-    margin: 47px 0 23px;
-
-    p {
-      margin: 0 0 16px;
-    }
-
-    .title {
-      margin: 0 0 44px;
-    }
-  }
-
-  .targets {
-    margin: 120px 0 0;
-
-    .title {
-      text-align: center;
-      font-size: 26px;
-      margin-bottom: 99px;
-      color: #1e1c21;
-    }
-
-    .item {
-      margin: 0 0 60px 0;
-
-      h3 {
-        font-size: 18px;
-        margin: 5px 0 0;
-      }
-
-      p {
-        font-size: 18px;
-        line-height: 26px;
-      }
-    }
-  }
-
-  .bg-color {
-    background-color: #ffffff;
-    padding: 52px 0;
-  }
-
-  .integration-guid {
-    width: 80%;
-    margin: 0 auto;
-    color: #1e1c21;
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: Inter;
-    }
-
-    .title {
-      text-align: center;
-
-      h2 {
-        font-size: 36px;
-      }
-    }
-
-    .content {
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin: 0;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
       }
     }
   }
 
   footer {
     background-image: url("../images/footer.png");
-    background-attachment: fixed;
     background-position: center;
     background-size: auto;
     height: 300px;
+  }
+}
+footer > div > div > div > div > a > img {
+  margin-left: 50em;
+}
 
-    @media screen and (max-width: $break-small) {
-      padding: 50px 0 45px;
-    }
+@media (max-width: 1200px) {
+  body {
+    header {
+      background: none;
 
-    .widget__item {
-      @media screen and (max-width: $break-small) {
-        padding: 15px 0 0;
-      }
-
-      .about {
-        margin-top: 26px;
-      }
-
-      .about {
-        font-size: 14px;
-        line-height: 23px;
-      }
-
-      .links {
-        h4 {
-          font-size: 14px;
-          font-weight: bold;
-          text-transform: uppercase;
-          font-family: Inter;
-          line-height: 0;
+      #main-nav {
+        .nav-wrap {
+          display: none;
         }
+      }
 
-        ul {
-          margin: 15px 0 0 0;
+      div.hero-wrap {
+        text-align: center;
+        padding: 2em;
+        display: block;
 
-          li {
-            line-height: 26px;
+        .wrapper {
+          .hero-inner.left {
+            display: none;
+          }
 
-            a {
-              font-size: 14px;
-              color: #797283;
+          .hero-inner.right {
+            width: 80%;
+            margin: 0 auto;
+            float: none;
 
-              &:hover,
-              &:active {
-                color: #098a34;
-              }
+            h1 {
+              margin: 0 auto;
             }
           }
         }
-
-        .links__special {
-          background-color: #098a34;
-          color: #ffffffe5;
-          border-radius: 4px;
-          padding: 2px 5px;
-
-          &:hover {
-            color: #ffffffe1;
-          }
-        }
       }
+    }
 
-      .social {
-        text-align: right;
+    .container {
+      box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.267);
 
-        @media screen and (max-width: $break-small) {
-          text-align: center;
-        }
+      .row {
+        display: flex;
+        padding: 2em;
 
-        a {
-          margin-left: 20px;
+        .col-4 {
+          margin: 0 auto;
+
+          h3 {
+            font-size: 2em;
+          }
 
           img {
-            filter: contrast(0);
-            transition: 0.15s;
-          }
-
-          &:hover img {
-            filter: contrast(1);
-          }
-
-          &:first-child {
-            margin-left: 0;
+            width: 8em;
+            margin-left: 25%;
           }
         }
       }
     }
 
-    .copyright {
-      text-align: center;
-      margin-top: 90px;
+    .whyHemp {
+      .hero2 {
+        background: url("../images/PlantHero2.png");
 
-      @media screen and (max-width: $break-small) {
-        margin-top: 31px;
+        .row {
+          .col-4 {
+            h2 {
+              font-size: 3em;
+              font-weight: bold;
+              margin-top: 10%;
+              margin-left: 10%;
+              color: #fff;
+            }
+
+            p {
+              font-size: 1.2em;
+              line-height: 26px;
+              margin-left: 10%;
+              max-width: 30%;
+              font-family: "Gilroy-Regular", sans-serif;
+            }
+          }
+        }
+      }
+    }
+
+    .mobileHero {
+      background: url("../images/mobileHero.jpg") center no-repeat;
+      height: 500px;
+      margin-top: -5%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 0;
+
+    header {
+      background: none;
+
+      #main-nav {
+        .nav-wrap {
+          // display: none;
+        }
       }
 
-      p {
-        font-size: 13px;
+      div.hero-wrap {
+        text-align: center;
+        padding: 2em;
+
+        .wrapper {
+          .hero-inner.left {
+            display: none;
+          }
+
+          .hero-inner.right {
+            width: 100%;
+          }
+        }
       }
+    }
+
+    .container {
+      box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.267);
+      max-width: 100%;
+
+      .row {
+        display: flex;
+        padding: 2em;
+        width: 100%;
+
+        .col-4 {
+          margin: 0 auto;
+
+          h3 {
+            font-size: 2em;
+          }
+          img {
+            width: 8em;
+            margin-left: 25%;
+          }
+        }
+      }
+    }
+
+    .whyHemp {
+      .hero2 {
+        background: none;
+
+        .row {
+          .col-4 {
+            h2 {
+              font-size: 3em;
+              font-weight: bold;
+              margin-top: 10%;
+              margin-left: 10%;
+              color: #fff;
+            }
+
+            p {
+              font-size: 1.2em;
+              line-height: 26px;
+              margin-left: 10%;
+              max-width: 30%;
+              font-family: "Gilroy-Regular", sans-serif;
+            }
+          }
+        }
+      }
+    }
+
+    .mobileHero {
+      background: url("../images/mobileHero.jpg") center no-repeat;
+      height: 500px;
+      margin-top: -5%;
+    }
+
+    .mobileBody {
+      background: url("../images/mobileHero2.jpg") no-repeat;
+      height: 1200px;
+      margin-top: 5%;
     }
   }
 }

@@ -6,7 +6,7 @@
   "author": "Ricky Germaine",
   "dependencies": {
     "gatsby": "^2.7.5",
-    "gatsby-cli": "^2.10.2",
+    "gatsby-cli": "^2.10.4",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.2.10",

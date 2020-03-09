@@ -34,7 +34,11 @@ const Layout = ({ children }) => (
               <div className={"widget__item"}>
                 <div className={"logo"}>
                   <Link to="/" title={"CBDistillery"}>
-                    <img alt={"cbdistillery"} src={logo} />
+                    <img
+                      alt={"cbdistillery"}
+                      src={logo}
+                      className={"logoAlign"}
+                    />
                   </Link>
                 </div>
               </div>
