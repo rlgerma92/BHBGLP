@@ -29,18 +29,25 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <footer>
-          <div className={"row"}>
-            <div className={"col-5"}>
-              <div className={"widget__item"}>
-                <div className={"logo"}>
-                  <Link to="/" title={"CBDistillery"}>
-                    <img
-                      alt={"cbdistillery"}
-                      src={logo}
-                      className={"logoAlign"}
-                    />
-                  </Link>
-                </div>
+          <div className={"feet"}>
+            <div className={"row"}>
+              <div className={"col-4"}>
+                <Link to="/" title={"CBDistillery"}>
+                  <img
+                    alt={"cbdistillery"}
+                    src={logo}
+                    className={"logoAlign"}
+                  />
+                </Link>
+              </div>
+              <div className={"col-4"}>
+                THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FDA AND ARE NOT
+                INTENDED TODIAGNOSE,TREAT OR CURE ANY DISEASE. ALWAYS CHECK WITH
+                YOUR PHYSICIAN BEFORE STARTING A NEW DIETARY SUPPLEMENT PROGRAM
+                Full Disclaimer
+              </div>
+              <div className={"col-4"}>
+                Copyright 2020, CBDISTILLERY. All rights reserved.
               </div>
             </div>
           </div>
