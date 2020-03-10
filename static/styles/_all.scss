@@ -38,7 +38,6 @@ body {
   }
 
   .wrapper {
-    display: block;
     margin: 0 auto;
     max-width: 1200px;
     width: 90%;
@@ -161,7 +160,6 @@ body {
 
   header .hero-wrap .wrapper .hero-inner p {
     font-size: 1.1em;
-    line-height: 2;
     color: #000000;
     font-family: "Gilroy-Regular", sans-serif;
     background-color: #fff;
@@ -213,7 +211,6 @@ body {
 
           p {
             font-size: 1.2em;
-            line-height: 26px;
             margin-left: 10%;
             max-width: 30%;
             font-family: "Gilroy-Regular", sans-serif;
@@ -223,17 +220,21 @@ body {
     }
   }
 
+  .mobileBody {
+    background: none;
+  }
+
   .info {
-    margin-top: -15%;
+    margin-top: -10%;
 
     .row {
-      display: flex;
+      width: 100%;
       text-align: center;
 
       .col-4 {
-        padding: 5em;
-        display: block;
+        display: table-cell;
         margin: 0 auto;
+        padding: 1em;
 
         img {
           width: 15em;
@@ -248,7 +249,7 @@ body {
           font-size: 2.5em;
           color: #000;
           font-weight: 700;
-          margin-bottom: 5%;
+          margin-bottom: -10%;
         }
 
         p {
@@ -256,6 +257,7 @@ body {
           color: rgba(0, 0, 0, 0.836);
           font-weight: 200;
           font-family: "Gilroy-Regular";
+          padding: 2em;
         }
       }
     }
@@ -267,13 +269,9 @@ body {
     background-size: auto;
     height: 300px;
   }
-}
-footer > div > div > div > div > a > img {
-  margin-left: 50em;
-}
 
-@media (max-width: 1200px) {
-  body {
+
+  @media (min-width:1025px) and (max-width: 1200px) {
     header {
       background: none;
 
@@ -306,11 +304,18 @@ footer > div > div > div > div > a > img {
       }
     }
 
+    .mobileHero {
+      background: url("../images/mobileHero.jpg") center no-repeat;
+      height: 500px;
+      margin-top: -5%;
+    }
+
     .container {
       box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.267);
+      width: 100%;
 
       .row {
-        display: flex;
+        width: 100%;
         padding: 2em;
 
         .col-4 {
@@ -329,10 +334,14 @@ footer > div > div > div > div > a > img {
     }
 
     .whyHemp {
+      width: 100%;
+
       .hero2 {
-        background: url("../images/PlantHero2.png");
+        background: url("../images/PlantHero2.png") no-repeat;
 
         .row {
+          width: 100%;
+
           .col-4 {
             h2 {
               font-size: 3em;
@@ -344,7 +353,6 @@ footer > div > div > div > div > a > img {
 
             p {
               font-size: 1.2em;
-              line-height: 26px;
               margin-left: 10%;
               max-width: 30%;
               font-family: "Gilroy-Regular", sans-serif;
@@ -354,24 +362,194 @@ footer > div > div > div > div > a > img {
       }
     }
 
-    .mobileHero {
-      background: url("../images/mobileHero.jpg") center no-repeat;
-      height: 500px;
-      margin-top: -5%;
+    .info {
+
+      .row {
+
+        .col-4 {
+          background-color: #c6d2ca;
+          padding: 1em;
+          display: table-cell;
+
+          img {
+            width: 15em;
+            height: 15em;
+            border-width: 1em;
+            border-radius: 8em;
+
+          }
+
+          h4 {
+            font-family: "Gilroy-Regular";
+            font-size: 3em;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 5%;
+            background-color: #098a34;
+            opacity: 0.7;
+            border-radius: 8px;
+          }
+
+          p {
+            font-size: 1.5em;
+            color: rgba(0, 0, 0, 0.836);
+            font-weight: 200;
+            font-family: "Gilroy-Regular";
+            background-color: #fff;
+            opacity: 0.7;
+            padding: 2em;
+            border-radius: 8px;
+          }
+        }
+      }
     }
+
   }
-}
 
-@media (max-width: 1024px) {
-  body {
-    padding: 0;
-
+  @media (max-width: 1024px) {
     header {
       background: none;
 
       #main-nav {
         .nav-wrap {
-          // display: none;
+          display: none;
+        }
+      }
+
+      div.hero-wrap {
+        text-align: center;
+        padding: 2em;
+
+        .wrapper {
+          .hero-inner.left {
+            display: none;
+          }
+
+          .hero-inner.right {
+            width: 100%;
+
+            p {
+              font-size: 1.5em;
+            }
+          }
+        }
+      }
+    }
+
+    .container {
+      width: 100%;
+
+      .row {
+        width: 100%;
+        padding: 0.01em;
+
+        .col-4 {
+          h3 {
+            font-size: 1em;
+          }
+
+          img {
+            width: 4em;
+            margin-left: 25%;
+          }
+        }
+      }
+    }
+
+    .mobileBody {
+      background: url("../images/mobileHero2.jpg") top no-repeat;
+      margin-top: 20%;
+      text-align: center;
+
+      .whyHemp {
+        .hero2 {
+          background: none;
+
+          .row {
+            .col-4 {
+              h2 {
+                text-align: center;
+                font-size: 3em;
+                color: #fff;
+                background-color: #098a34;
+                width: 80%;
+                border-radius: 8px;
+                margin-top: -10%;
+              }
+
+              p {
+                margin-top: 10%;
+                width: 100%;
+                margin-left: 25%;
+                text-align: center;
+                font-family: "Gilroy-Regular", sans-serif;
+                color: #000000;
+                background-color: #c6d2ca;
+                opacity: 0.9;
+                padding: 4em;
+                border-radius: 8px;
+                margin-bottom: 5%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .info {
+      .row {
+        text-align: center;
+        margin-top: 40%;
+
+        .col-4 {
+          padding: 2em;
+          background-color: #c6d2ca;
+          display: block;
+
+          img {
+            width: 17em;
+            height: 17em;
+            border-width: 1em;
+            border-radius: 8em;
+          }
+
+          h4 {
+            font-family: "Gilroy-Regular";
+            font-size: 3em;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 5%;
+            background-color: #098a34;
+            opacity: 0.7;
+            border-radius: 8px;
+            padding: 0.5em;
+          }
+
+          p {
+            font-size: 1.5em;
+            color: rgba(0, 0, 0, 0.836);
+            font-weight: 200;
+            font-family: "Gilroy-Regular";
+            background-color: #fff;
+            opacity: 0.7;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+
+    footer {
+      margin-top: 10%;
+    }
+  }
+
+  @media(max-width: 760px) {
+    header {
+      background: none;
+
+      #main-nav {
+        .nav-wrap {
+          display: none;
         }
       }
 
@@ -392,64 +570,253 @@ footer > div > div > div > div > a > img {
     }
 
     .container {
-      box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.267);
-      max-width: 100%;
+      width: 100%;
 
       .row {
-        display: flex;
-        padding: 2em;
+        display: inline-grid;
         width: 100%;
 
         .col-4 {
-          margin: 0 auto;
-
           h3 {
-            font-size: 2em;
+            font-size: 3em;
           }
+
           img {
-            width: 8em;
-            margin-left: 25%;
+            width: 15em;
+            margin-left: 20%;
           }
         }
       }
-    }
-
-    .whyHemp {
-      .hero2 {
-        background: none;
-
-        .row {
-          .col-4 {
-            h2 {
-              font-size: 3em;
-              font-weight: bold;
-              margin-top: 10%;
-              margin-left: 10%;
-              color: #fff;
-            }
-
-            p {
-              font-size: 1.2em;
-              line-height: 26px;
-              margin-left: 10%;
-              max-width: 30%;
-              font-family: "Gilroy-Regular", sans-serif;
-            }
-          }
-        }
-      }
-    }
-
-    .mobileHero {
-      background: url("../images/mobileHero.jpg") center no-repeat;
-      height: 500px;
-      margin-top: -5%;
     }
 
     .mobileBody {
-      background: url("../images/mobileHero2.jpg") no-repeat;
-      height: 1200px;
-      margin-top: 5%;
+      background: url("../images/mobileHero2.jpg") top no-repeat;
+      margin-top: 20%;
+      text-align: center;
+
+      .whyHemp {
+        .hero2 {
+          background: none;
+
+          .row {
+            .col-4 {
+              h2 {
+                text-align: center;
+                font-size: 3em;
+                color: #fff;
+                background-color: #098a34;
+                width: 80%;
+                border-radius: 8px;
+                margin-top: -10%;
+              }
+
+              p {
+                margin-left: 20%;
+                text-align: center;
+                font-family: "Gilroy-Regular", sans-serif;
+                color: #000000;
+                background-color: #c6d2ca;
+                opacity: 0.9;
+                padding: 5em;
+                border-radius: 8px;
+                margin-bottom: 5%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .info {
+      .row {
+        text-align: center;
+        margin-top: 40%;
+
+        .col-4 {
+          padding: 2em;
+          background-color: #c6d2ca;
+          display: block;
+
+          img {
+            width: 17em;
+            height: 17em;
+            border-width: 1em;
+            border-radius: 8em;
+            // margin-top: 25%;
+          }
+
+          h4 {
+            font-family: "Gilroy-Regular";
+
+            font-size: 3em;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 5%;
+            background-color: #098a34;
+            opacity: 0.7;
+            border-radius: 8px;
+            padding: 0.5em;
+          }
+
+          p {
+            font-size: 1.5em;
+            color: rgba(0, 0, 0, 0.836);
+            font-weight: 200;
+            font-family: "Gilroy-Regular";
+            background-color: #fff;
+            opacity: 0.7;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+
+    footer {
+      margin-top: 10%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    header {
+      background: none;
+
+      #main-nav {
+        .nav-wrap {
+          display: none;
+        }
+      }
+
+      div.hero-wrap {
+        text-align: center;
+        padding: 2em;
+
+        .wrapper {
+          .hero-inner.left {
+            display: none;
+          }
+
+          .hero-inner.right {
+            width: 100%;
+            font-size: 1.2rem;
+
+          }
+        }
+      }
+    }
+
+    .container {
+      width: 100%;
+
+      .row {
+        display: inline-grid;
+        padding: 0;
+
+        .col-4 {
+          display: block;
+
+          h3 {
+            font-size: 2em;
+            display: block;
+          }
+
+          img {
+            padding: 2em;
+            width: 10em;
+            display: block;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .mobileBody {
+      background: url("../images/mobileHero2.jpg") top no-repeat;
+      margin-top: 20%;
+      text-align: center;
+
+      .whyHemp {
+        .hero2 {
+          background: none;
+
+          .row {
+            .col-4 {
+              height: 100px;
+
+              h2 {
+                text-align: center;
+                font-size: 4em;
+                color: #fff;
+                background-color: #098a34;
+                width: 80%;
+                border-radius: 8px;
+                margin-top: 0%;
+              }
+
+              p {
+                margin-left: 0;
+                text-align: center;
+                font-family: "Gilroy-Regular", sans-serif;
+                color: #000000;
+                display: table-cell;
+                background-color: #c6d2ca;
+                opacity: 0.9;
+                padding: 1em;
+                border-radius: 8px;
+                margin-bottom: 5%;
+                font-size: 2em;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .info {
+      .row {
+        text-align: center;
+        margin-top: 40%;
+
+        .col-4 {
+          padding: 2em;
+          background-color: #c6d2ca;
+          display: block;
+
+          img {
+            width: 17em;
+            height: 17em;
+            border-width: 1em;
+            border-radius: 8em;
+            // margin-top: 25%;
+          }
+
+          h4 {
+            font-family: "Gilroy-Regular";
+
+            font-size: 3em;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 5%;
+            background-color: #098a34;
+            opacity: 0.7;
+            border-radius: 8px;
+            padding: 0.5em;
+          }
+
+          p {
+            font-size: 1.5em;
+            color: rgba(0, 0, 0, 0.836);
+            font-weight: 200;
+            font-family: "Gilroy-Regular";
+            background-color: #fff;
+            opacity: 0.7;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+
+    footer {
+      margin-top: 10%;
     }
   }
 }
