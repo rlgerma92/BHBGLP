@@ -460,6 +460,8 @@ body {
       background: url("../images/mobileHero2.jpg") top no-repeat;
       margin-top: 20%;
       text-align: center;
+      background-repeat: round;
+      background-position-x: inherit;
 
       .whyHemp {
         .hero2 {
@@ -472,24 +474,24 @@ body {
                 font-size: 3em;
                 color: #fff;
                 background-color: #098a34;
-                width: 80%;
+                width: 100%;
                 border-radius: 8px;
-                margin-top: -10%;
+                margin-top: 0%;
+                display: table-row-group;
               }
 
               p {
-                margin-top: 10%;
-                width: 100%;
-                margin-left: 25%;
-                text-align: center;
+                margin-top: 5%;
                 font-family: "Gilroy-Regular", sans-serif;
                 color: #000000;
                 background-color: #c6d2ca;
                 opacity: 0.9;
-                padding: 4em;
-                border-radius: 8px;
+                padding: 0;
                 margin-bottom: 5%;
+                font-size: 2em;
+                display: table-cell;
               }
+
             }
           }
         }
@@ -499,7 +501,7 @@ body {
     .info {
       .row {
         text-align: center;
-        margin-top: 40%;
+        margin-top: 5%;
 
         .col-4 {
           padding: 2em;
@@ -684,21 +686,33 @@ body {
         .nav-wrap {
           display: none;
         }
+
+        .learn-more {
+          display: table-cell;
+          float: inherit;
+          width: 100%;
+          font-size: 1.2em;
+          padding: 3em;
+          margin: 12px auto;
+          text-align: center;
+        }
+
       }
 
       div.hero-wrap {
         text-align: center;
-        padding: 2em;
+        padding: 0;
 
         .wrapper {
           .hero-inner.left {
             display: none;
+            padding: 0;
           }
 
           .hero-inner.right {
             width: 100%;
             font-size: 1.2rem;
-
+            padding: 0;
           }
         }
       }
@@ -774,19 +788,19 @@ body {
     .info {
       .row {
         text-align: center;
-        margin-top: 40%;
+        margin-top: 80%;
 
         .col-4 {
           padding: 2em;
           background-color: #c6d2ca;
           display: block;
+          margin-top: 5%;
 
           img {
-            width: 17em;
-            height: 17em;
+            width: 15em;
+            height: 15em;
             border-width: 1em;
             border-radius: 8em;
-            // margin-top: 25%;
           }
 
           h4 {
