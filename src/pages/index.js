@@ -2,9 +2,11 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import thumbnailHead from "../../static/images/head.svg";
-import thumbnailHand from "../../static/images/hand.svg";
-import thumbnailFlag from "../../static/images/flag.svg";
+import thumbnailSleep from "../../static/images/BetterSleep.svg";
+import thumbnailDiscomfort from "../../static/images/LessDiscomfort.svg";
+import thumbnailInflamation from "../../static/images/LessInflammation.svg";
+import thumbnailLessStiffness from "../../static/images/LessStiffness.svg";
+import thumbnailMoreRelaxed from "../../static/images/MoreRelaxed.svg";
 import thumbnailOil from "../../static/images/oil.png";
 import thumbnailTopical from "../../static/images/application.png";
 import thumbnailSoftgel from "../../static/images/softgels.png";
@@ -15,17 +17,25 @@ const IndexPage = () => (
     <div className={"mobileHero"} />
     <div className={"container"}>
       <div className={"row"}>
-        <div className={"col-4"}>
-          <img alt={"head"} src={thumbnailHead} />
-          <h3>Non-Intoxicating</h3>
+        <div className={"col-2"}>
+          <img alt={"Better Sleep"} src={thumbnailSleep} />
+          <h3>Better Sleep</h3>
         </div>
-        <div className={"col-4"}>
-          <img alt={"hand"} src={thumbnailHand} />
-          <h3>Naturally Sourced</h3>
+        <div className={"col-2"}>
+          <img alt={"Less Discomfort"} src={thumbnailDiscomfort} />
+          <h3>Less Discomfort</h3>
         </div>
-        <div className={"col-4"}>
-          <img alt={"flag"} src={thumbnailFlag} />
-          <h3>Made In The USA</h3>
+        <div className={"col-2"}>
+          <img alt={"Less Inflammation"} src={thumbnailInflamation} />
+          <h3>Less Inflammation</h3>
+        </div>
+        <div className={"col-2"}>
+          <img alt={"Less Stiffness"} src={thumbnailLessStiffness} />
+          <h3>Less Stiffness</h3>
+        </div>
+        <div className={"col-2"}>
+          <img alt={"More Relaxed"} src={thumbnailMoreRelaxed} />
+          <h3>More Relaxed</h3>
         </div>
       </div>
     </div>
@@ -36,13 +46,10 @@ const IndexPage = () => (
             <div className="col-4">
               <h2>Why Hemp?</h2>
               <p>
-                The Endocannabinoid System (ECS) is a collection of cell
-                receptors and their corresponding molecules (agonists) in the
-                human body responsible for regulating and maintaining many key
-                functions of the human body. Plant cannabinoids, bind with these
-                receptors and send a message to the body to do certain things.
-                Industrial hemp plants contain 113+ naturally occurring, active
-                cannabinoids.
+                Hemp extracts have been used for centuries to support the mind
+                and body in various ways. Through natural cell receptors and
+                their corresponding molecules, hemp oil has the potential to aid
+                the human body in regulating and maintaining many key functions.
               </p>
             </div>
           </div>

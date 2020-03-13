@@ -34,12 +34,16 @@ const Header = ({ siteTitle }) => (
       <div className="wrapper">
         <div className="hero-inner left"></div>
         <div className="hero-inner right">
-          <h1>Discover Quality Hemp Extract</h1>
+          <h1>Find Personalized Relief with Hemp Oil</h1>
           <p>
-            Chances are you know at least one person claiming to experience
-            significant benefits using hemp based products. If you’ve been
-            trying to learn about what hemp is, how hemp extract products work,
-            and what they could do for you, we are her to help.
+            People all over the world are turning to CBD to improve their
+            overall health. Many daily users first turned to CBD after their
+            current regimes didn't give them the effects they desired.
+            <br />
+            <br />
+            If you're looking for a natural, yet effective, way to get back to
+            living a comfortable life, see what health benefits CBDistillery
+            customers reported after using CBD daily for 7-14 days:*
           </p>
         </div>
       </div>

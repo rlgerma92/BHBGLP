@@ -41,7 +41,7 @@ const Layout = ({ children }) => (
                 </Link>
               </div>
               <div className={"col-4"}>
-                THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FDA AND ARE NOT
+                *THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FDA AND ARE NOT
                 INTENDED TODIAGNOSE,TREAT OR CURE ANY DISEASE. ALWAYS CHECK WITH
                 YOUR PHYSICIAN BEFORE STARTING A NEW DIETARY SUPPLEMENT PROGRAM
                 Full Disclaimer

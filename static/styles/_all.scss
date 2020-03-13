@@ -14,6 +14,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Gilroy-Heavy";
+  src: url("../fonts/Gilroy-Heavy.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {}
 
 body {
@@ -47,16 +54,18 @@ body {
   }
 
   header {
-    background: url("../images/hero.jpg") center left no-repeat;
+    background: url("../images/hero.jpg") bottom left no-repeat;
     background-size: flex;
-    min-height: 650px;
+    min-height: 820px;
   }
 
   header #main-nav {
-    padding: 1em 2em;
+    padding: 2em 2em 2em 12em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background: #fff;
+    box-shadow: 0 0 4em 0 rgba(0, 0, 0, 0.267);
   }
 
   header #main-nav .logo-wrap {
@@ -65,6 +74,7 @@ body {
     display: flex;
     width: 25%;
     float: left;
+    padding-top: .5em;
   }
 
   header #main-nav .logo-wrap a {
@@ -106,7 +116,7 @@ body {
     color: #000;
     text-decoration: none;
     font-size: 1.2em;
-    padding: 10px 30px;
+    padding: 20px 35px;
     -webkit-transition: 0.3s ease all;
     -o-transition: 0.3s ease all;
     transition: 0.3s ease all;
@@ -130,13 +140,16 @@ body {
     display: block;
     margin: 0 auto;
     background: #2fc353;
-    padding: 10px 40px;
     color: #fff;
     text-decoration: none;
     font-family: "Gilroy-ExtraBold", sans-serif;
     -webkit-transition: 0.3s ease all;
     -o-transition: 0.3s ease all;
     transition: 0.3s ease all;
+    font-size: 1.5em;
+    border-radius: .8em;
+    width: auto;
+    padding: 0.5em 1em;
   }
 
   header #main-nav .learn-more .button:hover {
@@ -148,6 +161,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 10em 0em 0em 10em;
   }
 
   header .hero-wrap .wrapper .hero-inner {
@@ -157,18 +171,19 @@ body {
   }
 
   header .hero-wrap .wrapper .hero-inner h1 {
-    font-family: "Gilroy-ExtraBold", sans-serif;
-    font-size: 2.4em;
+    color: #2fc353;
+    font-family: "Gilroy-Heavy", sans-serif;
+    font-size: 2em;
   }
 
   header .hero-wrap .wrapper .hero-inner p {
-    font-size: 1.1em;
+    font-size: 1.4em;
     color: #000000;
     font-family: "Gilroy-Regular", sans-serif;
     background-color: #fff;
     opacity: 0.75;
-    padding: 1em;
     border-radius: 1em;
+    padding-top: 1em;
   }
 
   .container {
@@ -177,9 +192,9 @@ body {
 
     .row {
       display: flex;
-      padding: 2em 0 5em 0;
+      padding: 2em 0 2em 0;
 
-      .col-4 {
+      .col-2 {
         margin: 0 auto;
         display: flex;
         -webkit-transition: 0.3s ease all;
@@ -215,15 +230,16 @@ body {
       .row {
         .col-4 {
           h2 {
-            font-size: 3em;
+            font-size: 4em;
             font-weight: bold;
             margin-top: 5%;
             margin-left: 10%;
             color: #fff;
+            padding-top: 1.2em;
           }
 
           p {
-            font-size: 1.2em;
+            font-size: 1.7em;
             margin-left: 10%;
             max-width: 30%;
             line-height: 4vh;
@@ -248,7 +264,7 @@ body {
 
       .col-4 {
         display: table-cell;
-        margin: 0 auto;
+        margin: 0.5em 2em 0;
         padding: 1em;
 
         img {
@@ -271,18 +287,19 @@ body {
         h4 {
           font-family: "Gilroy-Regular";
           font-size: 2.5em;
-          color: #000;
+          color: #fff;
           font-weight: 700;
-          margin: 0.5em 0 0;
+          margin: 0.5em 2em 0;
+          background-color: #098a34;
+          opacity: 0.7;
         }
 
         p {
-          margin-top: 0;
           font-size: 1.2em;
           color: rgba(0, 0, 0, 0.836);
           font-weight: 200;
           font-family: "Gilroy-Regular";
-          padding: 0.5em 8em 0 8em;
+          padding: 0.5em 2em 0;
         }
       }
     }
@@ -310,11 +327,13 @@ body {
     }
   }
 
-  @media (min-width: 1025px) and (max-width: 1200px) {
+  @media (min-width: 1025px) and (max-width: 1400px) {
     header {
       background: none;
 
       #main-nav {
+        padding: 1em;
+
         .nav-wrap {
           display: none;
         }
@@ -322,8 +341,8 @@ body {
 
       div.hero-wrap {
         text-align: center;
-        padding: 2em;
         display: block;
+        margin: 0 auto;
 
         .wrapper {
           .hero-inner.left {
@@ -331,16 +350,17 @@ body {
           }
 
           .hero-inner.right {
-            width: 80%;
-            margin: 0 auto;
-            float: none;
+            width: 75%;
+            margin: 3em 5em;
+            padding: 3em;
 
             h1 {
               margin: 0 auto;
+              font-size: 3em;
             }
 
             p {
-              font-size: 1.3em;
+              font-size: 2em;
               padding: 0;
             }
           }
@@ -360,17 +380,17 @@ body {
 
       .row {
         padding: 2em 0 5em 0;
-        margin: 0 2em 0 2em;
+        margin: 0;
 
-        .col-4 {
+        .col-2 {
           margin: 0 auto;
 
           h3 {
-            font-size: 2em;
+            font-size: 1em;
           }
 
           img {
-            width: 8em;
+            width: 4em;
           }
         }
       }
@@ -410,24 +430,26 @@ body {
         .col-4 {
           background-color: #c6d2ca;
           padding: 1em;
-          display: table-cell;
+          display: inline-flex;
 
           img {
             width: 15em;
             height: 15em;
             border-width: 1em;
             border-radius: 8em;
+            margin: 1em 0;
           }
 
           h4 {
             font-family: "Gilroy-Regular";
             font-size: 3em;
-            color: #fff;
+            color: #098a34;
             font-weight: 700;
-            margin-bottom: 5%;
-            background-color: #098a34;
+            margin-bottom: 0;
+            background-color: unset;
             opacity: 0.7;
             border-radius: 8px;
+            margin: 2em 1em;
           }
 
           p {
@@ -448,8 +470,11 @@ body {
   @media (max-width: 1024px) {
     header {
       background: none;
+      height: auto;
 
       #main-nav {
+        padding: 1em 1em;
+
         .nav-wrap {
           display: none;
         }
@@ -457,7 +482,8 @@ body {
 
       div.hero-wrap {
         text-align: center;
-        padding: 2em;
+        padding: 4em 2em;
+        margin: 4em 0;
 
         .wrapper {
           .hero-inner.left {
@@ -466,6 +492,11 @@ body {
 
           .hero-inner.right {
             width: 100%;
+
+            h1 {
+              font-size: 2.5em;
+              ;
+            }
 
             p {
               font-size: 1.5em;
@@ -477,15 +508,18 @@ body {
 
     .container {
       .row {
-        padding: 0 2em 0 2em;
+        padding: 0;
+        margin: 0 2em 0 2em;
 
-        .col-4 {
+        .col-2 {
+          padding: 1em;
+
           h3 {
-            font-size: 1.3em;
+            font-size: 1em;
           }
 
           img {
-            width: 10em;
+            width: 3em;
           }
         }
       }
@@ -501,8 +535,10 @@ body {
           background: none;
 
           .row {
+            margin: 0;
+
             .col-4 {
-              margin: 0 4em 0 4em;
+              margin: 8em 6em;
               padding: 1em;
 
               h2 {
@@ -513,8 +549,8 @@ body {
                     #098a34 0%,
                     #125020 100%);
                 width: 100%;
-                border-radius: 8px;
-                padding-bottom: 2em;
+                border-radius: 4em;
+                padding-bottom: 4em;
                 opacity: 0.9;
                 display: table-row;
               }
@@ -542,9 +578,10 @@ body {
         margin-top: 5%;
 
         .col-4 {
-          padding: 2em;
+          padding: 2em 15em;
           background-color: #c6d2ca;
           display: block;
+          margin: 0;
 
           img {
             width: 17em;
@@ -562,7 +599,8 @@ body {
             opacity: 0.7;
             border-radius: 8px;
             padding: 0.5em;
-            margin: 1em 2em 0 2em;
+            margin: 1em 0 .3em;
+            ;
           }
 
           p {
@@ -573,8 +611,8 @@ body {
             background-color: #fff;
             opacity: 0.7;
             border-radius: 8px;
-            margin: 0 4em 0 4em;
-            padding: 0;
+            margin: 0;
+            padding: 1em;
           }
         }
       }
@@ -593,7 +631,7 @@ body {
     }
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 769px) {
     header {
       background: none;
 
@@ -620,21 +658,34 @@ body {
     }
 
     .container {
-      width: 100%;
+      display: table;
+      margin: 0 auto;
+      box-shadow: none;
 
       .row {
-        display: inline-grid;
+        align-content: center;
         width: 100%;
+        display: grid;
+        margin: 0;
 
-        .col-4 {
-          h3 {
-            font-size: 3em;
-          }
+
+        .col-2 {
+          margin: 0;
+          display: table-column;
 
           img {
-            width: 15em;
-            margin-left: 20%;
+            width: 13em;
+            margin: 0 5em;
+            padding: 0;
+            align-self: center;
           }
+
+          h3 {
+            font-size: 3em;
+            margin: auto;
+            text-align: center;
+          }
+
         }
       }
     }
@@ -657,17 +708,16 @@ body {
                 background-color: #098a34;
                 width: 80%;
                 border-radius: 8px;
-                margin-top: -10%;
               }
 
               p {
-                margin-left: 20%;
+                margin: 0 auto;
                 text-align: center;
                 font-family: "Gilroy-Regular", sans-serif;
                 color: #000000;
                 background-color: #c6d2ca;
                 opacity: 0.9;
-                padding: 5em;
+                padding: 2em;
                 border-radius: 8px;
                 margin-bottom: 5%;
               }
@@ -680,10 +730,10 @@ body {
     .info {
       .row {
         text-align: center;
-        margin-top: 40%;
+        margin: 1em 0;
 
         .col-4 {
-          padding: 2em;
+          padding: 2em 10em 0;
           background-color: #c6d2ca;
           display: block;
 
@@ -728,18 +778,22 @@ body {
       background: none;
 
       #main-nav {
+
         .nav-wrap {
           display: none;
         }
 
+        .logo-wrap {
+          float: none;
+          margin: 0 1em;
+        }
+
         .learn-more {
-          display: table-cell;
-          float: inherit;
+          float: none;
           width: 100%;
-          font-size: 1.2em;
-          padding: 3em;
-          margin: 12px auto;
+          font-size: .8em;
           text-align: center;
+          margin-top: 5%;
         }
       }
 
@@ -757,33 +811,48 @@ body {
             width: 100%;
             font-size: 1.2rem;
             padding: 0;
+
+            h1 {
+              font-size: 2em;
+            }
+
+            p {
+              font-size: 1.2em;
+            }
           }
         }
       }
     }
 
     .container {
-      width: 100%;
+      display: table;
+      margin: 0 auto;
+      box-shadow: none;
 
       .row {
-        display: inline-grid;
-        padding: 0;
+        align-content: center;
+        width: 90%;
+        display: grid;
+        margin: 0;
 
-        .col-4 {
-          display: block;
 
-          h3 {
-            font-size: 1.5em;
-            display: block;
-            float: right;
-          }
+        .col-2 {
+          margin: 0;
+          display: table-column;
 
           img {
-            padding: 2em;
-            width: 10em;
-            display: block;
-            margin-left: 0;
+            width: 15em;
+            margin: 0 3em;
+            padding: 0;
+            align-self: center;
           }
+
+          h3 {
+            font-size: 2em;
+            margin: auto;
+            text-align: center;
+          }
+
         }
       }
     }
@@ -799,32 +868,32 @@ body {
 
           .row {
             .col-4 {
-              height: 100px;
+              margin: 14em 2em;
+              padding: 1em;
+
 
               h2 {
                 text-align: center;
-                font-size: 2.5em;
+                font-size: 3em;
                 color: #fff;
                 background-color: #098a34;
-                width: 80%;
                 border-radius: 8px;
-                margin-top: 0%;
-                margin-bottom: 5%;
+                opacity: 0.8;
+                padding: .5em;
               }
 
               p {
-                margin-left: 0;
+                margin: 1em auto;
                 text-align: center;
                 font-family: "Gilroy-Regular", sans-serif;
                 color: #000000;
                 display: table-cell;
                 background-color: #c6d2ca;
-                opacity: 0.9;
+                opacity: 0.8;
                 padding: 1em;
                 border-radius: 8px;
-                margin-bottom: 5%;
                 line-height: normal;
-                font-size: 1.2em;
+                font-size: 1.5em;
               }
             }
           }
@@ -861,7 +930,7 @@ body {
             opacity: 0.7;
             border-radius: 8px;
             padding: 0.5em;
-            margin: 0;
+            margin: .5em 0;
           }
 
           p {
@@ -879,7 +948,6 @@ body {
     }
 
     footer {
-      margin-top: 10%;
       width: 100%;
     }
   }
