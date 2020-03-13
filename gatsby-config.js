@@ -28,15 +28,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-sass`,
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-          families: ["gilroy"],
-          urls: ["./static/fonts/fonts.css"]
-        }
-      }
-    },
+
     "gatsby-plugin-offline"
 
     // this (optional) plugin enables Progressive Web App + Offline functionality

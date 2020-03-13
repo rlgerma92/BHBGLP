@@ -778,14 +778,18 @@ body {
       background: none;
 
       #main-nav {
+        padding: 0;
 
         .nav-wrap {
           display: none;
         }
 
         .logo-wrap {
-          float: none;
-          margin: 0 1em;
+          float: left;
+
+          a img {
+            margin: 0 3em 1em;
+          }
         }
 
         .learn-more {
