@@ -14,6 +14,8 @@
   font-style: normal;
 }
 
+html {}
+
 body {
   font-family: "Gilroy-Regular", sans-serif;
   color: #ffffff;
@@ -258,7 +260,6 @@ body {
           -webkit-transition: 0.3s ease all;
           -o-transition: 0.3s ease all;
           transition: 0.3s ease all;
-
         }
 
         img:hover {
@@ -267,22 +268,21 @@ body {
           transform: scale(1.1);
         }
 
-
         h4 {
           font-family: "Gilroy-Regular";
           font-size: 2.5em;
           color: #000;
           font-weight: 700;
-          margin: .5em 0 0;
+          margin: 0.5em 0 0;
         }
 
         p {
           margin-top: 0;
-          font-size: 1.1em;
+          font-size: 1.2em;
           color: rgba(0, 0, 0, 0.836);
           font-weight: 200;
           font-family: "Gilroy-Regular";
-          padding: .5em 8em 0 8em;
+          padding: 0.5em 8em 0 8em;
         }
       }
     }
@@ -310,8 +310,7 @@ body {
     }
   }
 
-
-  @media (min-width:1025px) and (max-width: 1200px) {
+  @media (min-width: 1025px) and (max-width: 1200px) {
     header {
       background: none;
 
@@ -339,6 +338,11 @@ body {
             h1 {
               margin: 0 auto;
             }
+
+            p {
+              font-size: 1.3em;
+              padding: 0;
+            }
           }
         }
       }
@@ -355,8 +359,8 @@ body {
       width: 100%;
 
       .row {
-        width: 100%;
-        padding: 2em;
+        padding: 2em 0 5em 0;
+        margin: 0 2em 0 2em;
 
         .col-4 {
           margin: 0 auto;
@@ -367,7 +371,6 @@ body {
 
           img {
             width: 8em;
-            margin-left: 25%;
           }
         }
       }
@@ -394,7 +397,7 @@ body {
             p {
               font-size: 1.2em;
               margin-left: 10%;
-              max-width: 30%;
+              max-width: 50%;
               font-family: "Gilroy-Regular", sans-serif;
             }
           }
@@ -403,9 +406,7 @@ body {
     }
 
     .info {
-
       .row {
-
         .col-4 {
           background-color: #c6d2ca;
           padding: 1em;
@@ -416,7 +417,6 @@ body {
             height: 15em;
             border-width: 1em;
             border-radius: 8em;
-
           }
 
           h4 {
@@ -443,7 +443,6 @@ body {
         }
       }
     }
-
   }
 
   @media (max-width: 1024px) {
@@ -477,31 +476,25 @@ body {
     }
 
     .container {
-      width: 100%;
-
       .row {
-        width: 100%;
-        padding: 0.01em;
+        padding: 0 2em 0 2em;
 
         .col-4 {
           h3 {
-            font-size: 1em;
+            font-size: 1.3em;
           }
 
           img {
-            width: 4em;
-            margin-left: 25%;
+            width: 10em;
           }
         }
       }
     }
 
     .mobileBody {
-      background: url("../images/mobileHero2.jpg") top no-repeat;
-      margin-top: 20%;
+      background: url("../images/PlantHero2.png") top no-repeat;
+      margin-top: 10%;
       text-align: center;
-      background-repeat: round;
-      background-position-x: inherit;
 
       .whyHemp {
         .hero2 {
@@ -509,15 +502,21 @@ body {
 
           .row {
             .col-4 {
+              margin: 0 4em 0 4em;
+              padding: 1em;
+
               h2 {
                 text-align: center;
                 font-size: 3em;
                 color: #fff;
-                background-color: #098a34;
+                background: linear-gradient(to bottom,
+                    #098a34 0%,
+                    #125020 100%);
                 width: 100%;
                 border-radius: 8px;
-                margin-top: 0%;
-                display: table-row-group;
+                padding-bottom: 2em;
+                opacity: 0.9;
+                display: table-row;
               }
 
               p {
@@ -526,12 +525,11 @@ body {
                 color: #000000;
                 background-color: #c6d2ca;
                 opacity: 0.9;
-                padding: 0;
+                padding: 1em;
                 margin-bottom: 5%;
-                font-size: 2em;
+                font-size: 1.5em;
                 display: table-cell;
               }
-
             }
           }
         }
@@ -560,11 +558,11 @@ body {
             font-size: 3em;
             color: #fff;
             font-weight: 700;
-            margin-bottom: 5%;
             background-color: #098a34;
             opacity: 0.7;
             border-radius: 8px;
             padding: 0.5em;
+            margin: 1em 2em 0 2em;
           }
 
           p {
@@ -575,17 +573,27 @@ body {
             background-color: #fff;
             opacity: 0.7;
             border-radius: 8px;
+            margin: 0 4em 0 4em;
+            padding: 0;
           }
         }
       }
     }
 
     footer {
-      margin-top: 10%;
+      height: auto;
+
+      .feet {
+        .row {
+          .col-4 {
+            margin: 0;
+          }
+        }
+      }
     }
   }
 
-  @media(max-width: 760px) {
+  @media (max-width: 760px) {
     header {
       background: none;
 
@@ -713,9 +721,6 @@ body {
       }
     }
 
-    footer {
-      margin-top: 10%;
-    }
   }
 
   @media (max-width: 500px) {
@@ -736,7 +741,6 @@ body {
           margin: 12px auto;
           text-align: center;
         }
-
       }
 
       div.hero-wrap {
@@ -799,12 +803,13 @@ body {
 
               h2 {
                 text-align: center;
-                font-size: 4em;
+                font-size: 2.5em;
                 color: #fff;
                 background-color: #098a34;
                 width: 80%;
                 border-radius: 8px;
                 margin-top: 0%;
+                margin-bottom: 5%;
               }
 
               p {
@@ -818,7 +823,8 @@ body {
                 padding: 1em;
                 border-radius: 8px;
                 margin-bottom: 5%;
-                font-size: 2em;
+                line-height: normal;
+                font-size: 1.2em;
               }
             }
           }
@@ -855,6 +861,7 @@ body {
             opacity: 0.7;
             border-radius: 8px;
             padding: 0.5em;
+            margin: 0;
           }
 
           p {
@@ -865,6 +872,7 @@ body {
             background-color: #fff;
             opacity: 0.7;
             border-radius: 8px;
+            margin: 0;
           }
         }
       }
@@ -872,6 +880,7 @@ body {
 
     footer {
       margin-top: 10%;
+      width: 100%;
     }
   }
 }
